@@ -1,0 +1,36 @@
+.article-cont {
+  background-color: #f5e8cdb3;
+  border: 0.2rem solid pink;
+  border-radius: 20px;
+  width: 65%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.post {
+  font-family: "Gill Sans", sans-serif;
+  font-size: small;
+  margin: 10px;
+}
+
+.autor-date {
+  display: flex;
+}
+
+.author {
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.date {
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.like-dislike {
+  margin-bottom: 5px;
+}
+
+.dislike-btn {
+  margin-left: 10px;
+}
