@@ -1,0 +1,7 @@
+.feed-container {
+  display: flex;
+}
+
+.posts-container {
+  width: 65%;
+}
