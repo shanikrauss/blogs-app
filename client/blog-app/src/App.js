@@ -1,5 +1,7 @@
 import "./App.css";
 import Feed from "./components/Feed";
+import { Routes, Route, useNavigate, Switch } from "react-router-dom";
+import CreateNewPost from "./components/CreateNewPost";
 
 const mock = [
   {
@@ -79,7 +81,10 @@ const mock = [
 function App() {
   return (
     <div className="App">
-      <Feed data={mock} />
+      <Routes>
+        <Route path="/" element={<Feed data={mock} />} />
+        <Route path="/CreateNewPost" element={<CreateNewPost />} />
+      </Routes>
     </div>
   );
 }
