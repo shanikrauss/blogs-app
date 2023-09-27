@@ -1,22 +1,10 @@
 import React from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
-import {
-  Button,
-  AppBar,
-  Box,
-  Toolbar,
-  Typography,
-  IconButton,
-  TextField,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { useNavigate } from "react-router-dom";
 import Post from "./Post";
-import CreateNewPost from "./CreateNewPost";
 import "./Feed.css";
+import AppHeader from "./AppHeader";
 
 const Feed = (props) => {
-  console.log(props);
-
   const navigate = useNavigate();
 
   const navigateToCreateNewPost = () => {
@@ -26,25 +14,7 @@ const Feed = (props) => {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            ></IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Blogs
-            </Typography>
-            <button className="new-item-btn" onClick={navigateToCreateNewPost}>
-              Add new item
-            </button>
-          </Toolbar>
-        </AppBar>
-      </Box>
+      <AppHeader btnTitle={"Add new"} handleClick={navigateToCreateNewPost} />
       {props.data.map((item) => {
         return <Post post={item} />;
       })}
