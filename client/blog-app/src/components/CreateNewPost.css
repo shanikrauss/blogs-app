@@ -1,0 +1,29 @@
+.form-inp {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.article-inp {
+  width: 70%;
+  /* overflow: hidden;
+  resize: both; */
+  /* min-height: 40px;
+  line-height: 20px; */
+}
+
+/* .inp {
+  align-items: center;
+}
+
+.lbl {
+  width: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
+} */

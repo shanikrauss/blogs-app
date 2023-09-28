@@ -1,0 +1,9 @@
+.tags {
+  background-color: #f5e8cdb3;
+  border: 0.2rem solid pink;
+  border-radius: 20px;
+  width: 30%;
+  margin-top: 10px;
+  height: fit-content;
+  padding: 5px;
+}
