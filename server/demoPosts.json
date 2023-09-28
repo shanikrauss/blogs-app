@@ -1,66 +1,85 @@
 {
-  "1": {
-    "userid": 101,
-    "title": "Exploring the Mysteries of Deep Space",
-    "author": "Mark Star",
-    "body": "Embark on a journey through the cosmos as we delve into the mysteries of deep space. From the enigmatic black holes that swallow everything in their path to the dazzling beauty of distant galaxies, the universe never ceases to amaze us. Join us in unraveling the secrets of the cosmos.",
-    "tags": ["space", "science", "exploration"],
-    "date": "2022-08-12T14:30:00.000Z"
-  },
-  "2": {
-    "userid": 202,
-    "title": "The Art of Culinary Fusion",
-    "author": "Mark Star",
-    "body": "In the world of gastronomy, culinary fusion has emerged as a creative and delectable trend. From the fusion of Asian and Latin flavors to the harmonious blend of traditional and modern techniques, chefs are pushing the boundaries of taste. Discover the artistry behind culinary fusion and savor the unique flavors it brings to the table.",
-    "tags": ["food", "cooking", "fusion"],
-    "date": "2023-03-25T18:45:00.000Z"
-  },
-  "3": {
-    "userid": 303,
-    "title": "The Intriguing World of Cryptocurrencies",
-    "author": "Mark Star",
-    "body": "Cryptocurrencies have taken the financial world by storm, offering new possibilities and challenges. From the rise of Bitcoin to the innovative applications of blockchain technology, this article explores the intriguing world of cryptocurrencies and their potential impact on the future of finance.",
-    "tags": ["cryptocurrency", "blockchain", "finance"],
-    "date": "2022-11-05T09:15:00.000Z"
-  },
-  "4": {
-    "userid": 404,
-    "title": "Rediscovering Ancient Wisdom: Meditation and Mindfulness",
-    "author": "Sharon Stone",
-    "body": "In today's fast-paced world, many are turning to ancient practices like meditation and mindfulness to find peace and clarity. This article delves into the benefits of these practices, their origins in ancient traditions, and how they can help us navigate the complexities of modern life.",
-    "tags": ["meditation", "mindfulness", "wellness"],
-    "date": "2022-10-01T11:20:00.000Z"
-  },
-  "5": {
-    "userid": 505,
-    "title": "The Thriving Ecosystem of Urban Wildlife",
-    "author": "Sharon Stone",
-    "body": "Amidst the concrete jungles of our cities, a thriving ecosystem of urban wildlife exists. From squirrels and birds to unexpected guests like coyotes and raccoons, this article celebrates the adaptability of nature and the coexistence of wildlife in our urban environments.",
-    "tags": ["wildlife", "urban", "environment"],
-    "date": "2023-01-15T16:55:00.000Z"
-  },
-  "6": {
-    "userid": 606,
-    "title": "The Resurgence of Vinyl Records",
-    "author": "Hila Fr",
-    "body": "In an age dominated by digital music, vinyl records are making a surprising comeback. Collectors and music enthusiasts are rediscovering the warmth and authenticity of analog sound. Explore the resurgence of vinyl records, their enduring appeal, and the vinyl revival sweeping the music industry.",
-    "tags": ["music", "vinyl", "retro"],
-    "date": "2023-02-28T13:10:00.000Z"
-  },
-  "7": {
-    "userid": 707,
-    "title": "The Future of Artificial Intelligence in Healthcare",
-    "author": "Andrew git",
-    "body": "Artificial intelligence is transforming healthcare in remarkable ways, from early disease detection to personalized treatment plans. This article delves into the cutting-edge AI technologies revolutionizing the medical field and their potential to improve patient outcomes and healthcare efficiency.",
-    "tags": ["AI", "healthcare", "technology"],
-    "date": "2022-12-10T17:40:00.000Z"
-  },
-  "8": {
-    "userid": 808,
-    "title": "Journey to the Bottom of the Ocean",
-    "author": "Andrew git",
-    "body": "Descend into the abyss as we embark on a daring journey to the bottom of the ocean. Discover the wonders",
-    "tags": ["AI", "healthcare", "technology"],
-    "date": "2022-12-10T17:40:00.000Z"
-  }
+  "dummy": [
+    {
+      "postid": 1,
+      "userid": 101,
+      "title": "Exploring the Mysteries of Deep Space",
+      "author": "Mark Star",
+      "body": "Embark on a journey through the cosmos as we delve into the mysteries of deep space. From the enigmatic black holes that swallow everything in their path to the dazzling beauty of distant galaxies, the universe never ceases to amaze us. Join us in unraveling the secrets of the cosmos.",
+      "tags": ["space", "science", "exploration"],
+      "date": "2022-08-12T14:30:00.000Z"
+    },
+    {
+      "postid": 2,
+      "userid": 202,
+      "title": "The Art of Culinary Fusion",
+      "author": "Mark Star",
+      "body": "In the world of gastronomy, culinary fusion has emerged as a creative and delectable trend. From the fusion of Asian and Latin flavors to the harmonious blend of traditional and modern techniques, chefs are pushing the boundaries of taste. Discover the artistry behind culinary fusion and savor the unique flavors it brings to the table.",
+      "tags": ["space", "food", "cooking", "fusion"],
+      "date": "2023-03-25T18:45:00.000Z"
+    },
+    {
+      "postid": 3,
+      "userid": 303,
+      "title": "The Intriguing World of Cryptocurrencies",
+      "author": "Mark Star",
+      "body": "Cryptocurrencies have taken the financial world by storm, offering new possibilities and challenges. From the rise of Bitcoin to the innovative applications of blockchain technology, this article explores the intriguing world of cryptocurrencies and their potential impact on the future of finance.",
+      "tags": ["cryptocurrency", "blockchain", "finance"],
+      "date": "2022-11-05T09:15:00.000Z"
+    },
+    {
+      "postid": 4,
+      "userid": 404,
+      "title": "Rediscovering Ancient Wisdom: Meditation and Mindfulness",
+      "author": "Sharon Stone",
+      "body": "In today's fast-paced world, many are turning to ancient practices like meditation and mindfulness to find peace and clarity. This article delves into the benefits of these practices, their origins in ancient traditions, and how they can help us navigate the complexities of modern life.",
+      "tags": ["meditation", "mindfulness", "wellness"],
+      "date": "2022-10-01T11:20:00.000Z"
+    },
+    {
+      "postid": 5,
+      "userid": 505,
+      "title": "The Thriving Ecosystem of Urban Wildlife",
+      "author": "Sharon Stone",
+      "body": "Amidst the concrete jungles of our cities, a thriving ecosystem of urban wildlife exists. From squirrels and birds to unexpected guests like coyotes and raccoons, this article celebrates the adaptability of nature and the coexistence of wildlife in our urban environments.",
+      "tags": ["wildlife", "urban", "environment"],
+      "date": "2023-01-15T16:55:00.000Z"
+    },
+    {
+      "postid": 6,
+      "userid": 606,
+      "title": "The Resurgence of Vinyl Records",
+      "author": "Hila Fr",
+      "body": "In an age dominated by digital music, vinyl records are making a surprising comeback. Collectors and music enthusiasts are rediscovering the warmth and authenticity of analog sound. Explore the resurgence of vinyl records, their enduring appeal, and the vinyl revival sweeping the music industry.",
+      "tags": ["music", "vinyl", "retro"],
+      "date": "2023-02-28T13:10:00.000Z"
+    },
+    {
+      "postid": 7,
+      "userid": 707,
+      "title": "The Future of Artificial Intelligence in Healthcare",
+      "author": "Andrew git",
+      "body": "Artificial intelligence is transforming healthcare in remarkable ways, from early disease detection to personalized treatment plans. This article delves into the cutting-edge AI technologies revolutionizing the medical field and their potential to improve patient outcomes and healthcare efficiency.",
+      "tags": ["AI", "healthcare", "technology"],
+      "date": "2022-12-10T17:40:00.000Z"
+    },
+    {
+      "postid": 8,
+      "userid": 808,
+      "title": "Journey to the Bottom of the Ocean",
+      "author": "Andrew git",
+      "body": "Descend into the abyss as we embark on a daring journey to the bottom of the ocean. Discover the wonders of the deep sea, from bizarre and otherworldly creatures to hydrothermal vents teeming with life. Dive into the mysteries of the world's least explored frontier.",
+      "tags": ["ocean", "exploration", "marine"],
+      "date": "2022-07-20T08:05:00.000Z"
+    },
+    {
+      "postid": 9,
+      "userid": 909,
+      "title": "The Fascinating World of Insects",
+      "author": "Andrew git",
+      "body": "Insects make up a staggering majority of Earth's species, yet they often go unnoticed. This article sheds light on the fascinating and diverse world of insects, from the intricate social structures of ants to the dazzling colors of butterflies. Explore the incredible lives of Earth's tiny but essential inhabitants.",
+      "tags": ["insects", "nature", "biodiversity"],
+      "date": "2022-09-05T22:30:00.000Z"
+    }
+  ]
 }

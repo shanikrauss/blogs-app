@@ -36,6 +36,13 @@ app.get("/tags", (req, res, next) => {
   res.status(200).send(JSON.stringify(removeDuplicates(tags.flat())));
 });
 
+app.get("/filterposts", (req, res, next) => {
+  const tag = req.query.tag;
+  const filtered = posts.dummy.filter((item) => item.tags.includes(tag));
+
+  res.status(200).send(JSON.stringify(filtered));
+});
+
 // app.get("/children/:id", (req, res, next) => {
 //   const id = req.params.id;
 //   const children = mapping[id].children;
@@ -52,7 +59,7 @@ app.get("/tags", (req, res, next) => {
 //   res.status(200).send(JSON.stringify(childrenTitles));
 // });
 
-// // app.post("/add-new-item", controller.postAddItem);
+// app.post("/add-new-item", controller.postAddItem);
 // app.post("/item/:fatherId", (req, res, next) => {
 //   const title = req.body.title;
 //   const fatherId = req.params.fatherId;
