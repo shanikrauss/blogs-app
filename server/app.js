@@ -36,76 +36,53 @@ app.get("/tags", (req, res, next) => {
   res.status(200).send(JSON.stringify(removeDuplicates(tags.flat())));
 });
 
-app.get("/filterposts", (req, res, next) => {
+app.get("/filterpoststags", (req, res, next) => {
   const tag = req.query.tag;
   const filtered = posts.dummy.filter((item) => item.tags.includes(tag));
 
   res.status(200).send(JSON.stringify(filtered));
 });
 
-// app.get("/children/:id", (req, res, next) => {
-//   const id = req.params.id;
-//   const children = mapping[id].children;
-//   //   console.log("1", children)
-//   const childrenTitles = children.map((childId) => {
-//     return {
-//       id: childId,
-//       title: items[childId].title,
-//       isSubmenu: items[childId].isSubmenu,
-//     };
-//   });
+app.get("/filterpostsauthor", (req, res, next) => {
+  const author = req.query.author;
+  const filtered = posts.dummy.filter(
+    (item) => item.author.toLowerCase() === author.toLowerCase()
+  );
 
-//   //   console.log("2", JSON.stringify(childrenTitles))
-//   res.status(200).send(JSON.stringify(childrenTitles));
-// });
+  res.status(200).send(JSON.stringify(filtered));
+});
 
-// app.post("/add-new-item", controller.postAddItem);
-// app.post("/item/:fatherId", (req, res, next) => {
-//   const title = req.body.title;
-//   const fatherId = req.params.fatherId;
-//   //   console.log(req, title, fatherId)
-//   const id = uuidv4(); // new id
+app.post("/post", (req, res, next) => {
+  const title = req.body.title;
+  const content = req.body.content;
+  const author = req.body.author;
+  const tags = req.body.tags;
+  const postid = uuidv4(); // new id
+  const userid = uuidv4(); // new id
 
-//   items[id] = { title: title, isSubmenu: false };
-//   mapping[id] = { father: fatherId, children: null }; // when add new submenu only dif is child: []
-//   mapping[fatherId] = {
-//     ...mapping[fatherId],
-//     children: [...mapping[fatherId].children, id],
-//   }; // add new child to father
+  const currentDate = new Date();
 
-//   writeToFile("items.json", items);
-//   writeToFile("mapping.json", mapping);
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Months are 0-based
+  const day = String(currentDate.getDate()).padStart(2, "0");
+  const currentDateTimeString = `${year}-${month}-${day}`;
 
-//   res.status(200).send({ id: id });
-// });
+  const newPost = {
+    postid: postid,
+    userid: userid,
+    title: title,
+    author: author,
+    body: content,
+    tags: tags,
+    date: currentDateTimeString,
+  };
 
-// app.post("/submenu/:fatherId", (req, res, next) => {
-//   const title = req.body.title;
-//   const fatherId = req.params.fatherId;
-//   const id = uuidv4(); // new id
-//   //   console.log(fatherId)
+  posts["dummy"].push(newPost);
 
-//   items[id] = { title: title, isSubmenu: true };
-//   mapping[id] = { father: fatherId, children: [] }; // when add new submenu only dif is child: []
-//   mapping[fatherId] = {
-//     ...mapping[fatherId],
-//     children: [...mapping[fatherId].children, id],
-//   }; // add new child to father
+  writeToFile("demoPosts.json", posts);
 
-//   writeToFile("items.json", items);
-//   writeToFile("mapping.json", mapping);
-//   res.status(200).send({ id: id });
-// });
-
-// app.post("/rename/:id", (req, res, next) => {
-//   const title = req.body.title;
-//   const id = req.params.id;
-
-//   items[id] = { title, isSubmenu: items[id].isSubmenu };
-
-//   writeToFile("items.json", items);
-//   res.status(200).send();
-// });
+  res.status(200).send({ postid: postid });
+});
 
 app.listen(3001, () => {
   console.log("Server is running on port 3001");
